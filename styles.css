@@ -1,0 +1,165 @@
+/* Google Fonts */
+/* -- Montserrat 500, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+/* -- Fraunces 700 */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* VARIABLES */
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font Size */
+    --default-font: 14px;
+}
+
+/* LAYOUT AND COMMON STYLES */
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--default-font);
+    background-color: var(--cream);
+}
+
+main {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 15px;
+    background-color: var(--white);
+    
+}
+
+.product-image picture source,
+.product-image picture img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.product-details {
+    padding: 10%;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: var(--default-font);
+    text-transform: uppercase;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 4px;
+    padding-bottom: 5%;
+
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: var(--very-dark-blue);
+    line-height: 2rem;
+    padding-bottom: 5%;
+
+}
+
+.product-details p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue);
+    line-height: 1.5rem;
+    padding-bottom: 5%;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+
+.product-details div p:nth-of-type(1) {
+    font-family: 'Fraunces', serif;
+    color: var(--dark-cyan);
+    font-size: 2rem;
+    margin-right: 10%;
+}
+
+.product-details div p:nth-of-type(2) {
+    text-decoration: line-through;
+}
+
+button {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--dark-cyan);
+    padding: 5%;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem; 
+
+}
+
+button:hover {
+    background-color: hsl(157, 36%, 17%);
+}
+
+footer {
+    width: 100%;
+    background-color: var(--dark-cyan);
+    padding: 2% 0;
+    color: #EAEAEA;
+}
+
+.attribution a,
+footer a {
+    color: hsl(157, 90%, 73%);
+}
+
+/* Media query */
+
+@media screen and (min-width: 1024px) {
+    main {
+        width: 800px;
+        flex-direction: row;
+    }
+
+    .product-image {
+        flex-basis: 50%;
+    }
+
+    .product-details {
+        width: 50%;
+        padding: 5%;
+    }
+
+    .product-image picture source,
+    .product-image picture img {
+        height: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+}
+
+/* Resources 
+
+https://www.youtube.com/watch?v=nHB-3WJTfSg - Display Different Imgages based on device width
+
+
+
+*/
+
+
+
