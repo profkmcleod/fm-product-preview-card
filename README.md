@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/css-variables-flexbox-3NUcHhxUHz)
-- Live Site URL: [Add live site URL here](https://profkmcleod.github.io/fm-product-preview-card/)
+- [Solution URL](https://www.frontendmentor.io/solutions/css-variables-flexbox-3NUcHhxUHz)
+- [Live Site URL](https://profkmcleod.github.io/fm-product-preview-card/)
 
 ## My process
 
